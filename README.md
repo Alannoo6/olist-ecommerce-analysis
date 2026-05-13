@@ -9,7 +9,7 @@
 
 > End-to-end analytical project on the Olist Brazilian E-Commerce dataset (~100K orders, 2016 to 2018). Combines exploratory data analysis in Jupyter, a curated set of business insights, and an interactive Streamlit dashboard.
 
-**Live Dashboard:** LINK_TO_STREAMLIT_DEPLOY_HERE
+**Live Dashboard:** https://lannoo-olist-dashboard.streamlit.app/
 **EDA Notebook:** [notebooks/01_olist_eda.ipynb](notebooks/01_olist_eda.ipynb)
 
 ---
@@ -39,6 +39,21 @@ This analysis answers six core questions a marketplace operator would ask:
 | Median Delivery Time | 10 days |
 | Late Delivery Rate | 6.8% |
 | Total Sellers | ~3,095 |
+
+---
+
+## Dashboard Preview
+
+Interactive Streamlit dashboard deployed at https://lannoo-olist-dashboard.streamlit.app/
+
+### Overview & Headline KPIs
+![Dashboard Overview](outputs/screenshots/dashboard_overview.png)
+
+### Product Categories & Geographic Distribution
+![Categories & Geography](outputs/screenshots/dashboard_categories.png)
+
+### Seller Concentration (Pareto)
+![Seller Pareto](outputs/screenshots/dashboard_sellers.png)
 
 ---
 
@@ -96,7 +111,9 @@ olist-ecommerce-analysis/
 |   01_olist_eda.ipynb           Full exploratory data analysis
 | streamlit_app/
 |   app.py                       Interactive dashboard
-| outputs/figures/               Exported plots
+| outputs/
+|   screenshots/                 Dashboard screenshots
+|   figures/                     Exported plots from notebook
 | .streamlit/config.toml         Streamlit theme configuration
 | requirements.txt
 | README.md
@@ -118,7 +135,7 @@ jupyter notebook notebooks/01_olist_eda.ipynb
 streamlit run streamlit_app/app.py
 ```
 
-The dataset is not committed to the repo. Follow the instructions in `data/README.md` to download the 9 CSVs from Kaggle.
+The 9 CSVs from Kaggle are required. Follow the instructions in `data/README.md` to download them.
 
 ---
 
